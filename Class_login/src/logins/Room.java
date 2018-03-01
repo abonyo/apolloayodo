@@ -51,10 +51,12 @@ public class Room extends javax.swing.JFrame {
         jBtnDelete = new javax.swing.JButton();
         jMessage = new javax.swing.JLabel();
         jBtnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(221, 40, 40));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTblRoom.setModel(new javax.swing.table.DefaultTableModel(
@@ -85,7 +87,7 @@ public class Room extends javax.swing.JFrame {
         jBtnCapacity.setText("capacity");
         jPanel1.add(jBtnCapacity, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 90, -1));
 
-        jBtnLocation.setText("location");
+        jBtnLocation.setText("building");
         jPanel1.add(jBtnLocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 90, -1));
 
         jBtnCoursecode.setText("course code");
@@ -132,7 +134,11 @@ public class Room extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 740, 470));
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\classroom-management-image.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 470));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -238,6 +244,7 @@ public class Room extends javax.swing.JFrame {
     private javax.swing.JButton jBtnLecturerid;
     private javax.swing.JButton jBtnLocation;
     private javax.swing.JButton jBtnRoomnumber;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jMessage;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

@@ -48,10 +48,12 @@ public class courses extends javax.swing.JFrame {
         jBtnEDIT = new javax.swing.JButton();
         jBtnDELETE = new javax.swing.JButton();
         jBtnBACK = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(211, 29, 29));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTBLcourses.setModel(new javax.swing.table.DefaultTableModel(
@@ -69,12 +71,16 @@ public class courses extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 390, 380));
 
+        jLabelcoursename.setForeground(new java.awt.Color(255, 255, 255));
         jLabelcoursename.setText("course name");
         jPanel1.add(jLabelcoursename, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 110, -1));
 
+        jLabelcoursecode.setForeground(new java.awt.Color(255, 255, 255));
         jLabelcoursecode.setText("course code");
         jPanel1.add(jLabelcoursecode, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 100, -1));
 
+        jLabelcourseunits.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelcourseunits.setForeground(new java.awt.Color(255, 255, 255));
         jLabelcourseunits.setText("course units");
         jPanel1.add(jLabelcourseunits, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 90, -1));
         jPanel1.add(jTfcourseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 130, -1));
@@ -114,7 +120,11 @@ public class courses extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnBACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 730, 430));
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\classroom-management-image.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 430));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 430));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -195,6 +205,7 @@ public class courses extends javax.swing.JFrame {
     private javax.swing.JButton jBtnBACK;
     private javax.swing.JButton jBtnDELETE;
     private javax.swing.JButton jBtnEDIT;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelcoursecode;
     private javax.swing.JLabel jLabelcoursename;
     private javax.swing.JLabel jLabelcourseunits;
